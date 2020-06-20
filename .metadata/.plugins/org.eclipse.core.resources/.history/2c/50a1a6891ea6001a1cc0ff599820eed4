@@ -1,0 +1,204 @@
+package com.kh.chap02.practice.example;
+
+import java.util.Scanner;
+
+public class LoopPractice2 {
+
+	Scanner sc = new Scanner(System.in);
+
+	public void example1() { // s.e1
+
+		while (true) {
+			System.out.print("1이상의 숫자를 입력하세요: ");
+			int num = sc.nextInt();
+
+			if (num > 0) {
+				for (int i = 1; i <= num; i++) {
+
+					System.out.print(i + " ");
+				}
+				break;
+
+			} else {
+				System.out.println("잘못입력하셨습니다: ");
+
+			}
+
+		}
+
+	} // e.e1
+
+	public void example2() {
+
+		while (true) { // s,while
+			System.out.print("1이상의 숫자를 입력하세요: ");
+			int input = sc.nextInt();
+
+			if (input > 1) {
+				for (int i = input; i >= 1; i--) { // s.for
+					System.out.print(i + " ");
+				} // e.for
+				break;
+
+			} else {
+				System.out.println("잘못입력하셨습니다. 다시 입력해주세요:");
+			} // e.ifelse
+
+		} // e.while
+
+	} // e.e2
+
+	public void example3() { // s.e3
+
+		System.out.print("정수를 하나 입력하세요 : ");
+		int num1 = sc.nextInt();
+
+		int sum = 0;
+
+		for (int i = 1; i <= num1; i++) {
+			sum += i;
+
+		}
+		System.out.println(sum);
+
+	} // e.e3
+
+	public void example4() { // s.e4
+
+		while (true) {
+			System.out.print("first number: ");
+			int num1 = sc.nextInt();
+
+			System.out.print("second number: ");
+			int num2 = sc.nextInt();
+
+			if (num1 >= 1 && num1 > num2 && num2 >= 1) {
+				for (int i = num2; i <= num1; i++) { // s.for
+					System.out.print(i + " ");
+				} // e.for
+				break;
+
+			} else if (num1 >= 1 && num1 < num2 && num2 >= 1) {
+				for (int i = num1; i <= num2; i++) { // s.for
+					System.out.print(i + " ");
+				} // e.for
+				break;
+
+			} else {
+				System.out.println("1이상의 숫자만을 입력해주세요.");
+			}
+
+		}
+
+	} // e.e4
+
+	public void example5() { // s.e5
+
+		System.out.print("숫자: ");
+		int dan = sc.nextInt();
+
+		System.out.println("===" + dan + "단===");
+		for (int i = 1; i <= 9; i++) {
+			System.out.printf("%d x %d = %d\n", dan, i, (dan * i));
+		}
+
+	} // e.e5
+
+	public void example6() { // s.e6
+
+		while (true) {
+
+			System.out.print("숫자: ");
+			int dan = sc.nextInt();
+
+			if (dan >= 2 && dan <= 9) {
+
+				for (int i = dan; i <= 9; i++) { // s.for
+					System.out.println("===" + i + "단===");
+					for (int j = 1; j <= 9; j++) {
+						System.out.printf("%d x %d = %d\n", i, j, (i * j));
+					}
+
+				} // e.for
+				break;
+
+			} else {
+				System.out.println("2~9사이의 숫자만 입력해주세요");
+			}
+		}
+
+	} // e.e6
+
+	public void example7() {		//s.e7
+		System.out.print("first number : ");
+		int num1 = sc.nextInt();
+		
+		System.out.print("공차 : ");
+		int num2 = sc.nextInt();
+		
+		for(int i = 1; i<=10; i++) {
+			System.out.print(num1 + " ");
+			num1+=num2;
+		}
+		
+	} 		// e.e7
+
+	public void example8()	{
+		System.out.print("연산자 : ");
+		char op = sc.next().charAt(0);
+		
+		System.out.print("정수1 : ");
+		int num1 = sc.nextInt();
+		
+		System.out.print("정수2 : ");
+		int num2 = sc.nextInt();
+		
+		int a = (num1 + num2);
+		int b = (num1 - num2);
+		int c = (num1 * num2);
+		int d = (num1 / num2);
+		int e = (num1 % num2);
+		
+		if(num1>0 || num2>0) {		//s.if
+			switch(op) {	//s.switch
+			case '+' : System.out.printf("%d %c %d = %d\n",num1,op,num2,a);break;
+			case '-' : System.out.printf("%d %c %d = %d\n",num1,op,num2,b);break;
+			case '*' : System.out.printf("%d %c %d = %d\n",num1,op,num2,c);break;
+			case '/' : System.out.printf("%d %c %d = %d\n",num1,op,num2,d);break;
+			case '%' : System.out.printf("%d %c %d = %d\n",num1,op,num2,e);break;
+			default : System.out.println("없는 연산자입니다. 다시 입력해주세요."); 
+			}	// e.switch 
+			System.out.println("0으로 나눌 수 없습니다.");
+		}		//e.if 
+		
+		
+	}
+	
+	public void example8a() {
+		System.out.print("연산자 : ");
+		char op = sc.next().charAt(0);
+		
+		System.out.print("정수1 : ");
+		int num1 = sc.nextInt();
+		
+		System.out.print("정수2 : ");
+		int num2 = sc.nextInt();
+		
+		if(op == '+') {
+			System.out.printf("%d %c %d = %d\n",num1,op,num2,(num1+num2));
+		} else if (op == '-'){
+			System.out.printf("%d %c %d = %d\n",num1,op,num2,(num1-num2));
+		} else if(op == '*') {
+			System.out.printf("%d %c %d = %d\n",num1,op,num2,(num1*num2));
+		} else if(op == '/' && num1>0 && num2>0) {
+			System.out.printf("%d %c %d = %d\n",num1,op,num2,(num1/num2));
+		} else if(op == '%') {
+			System.out.printf("%d %c %d = %d\n",num1,op,num2,(num1%num2));
+		} else if (op == '/' || num1<=0 || num2<=0 ) {
+			System.out.println("0으로 나눌 수 없습니다. 다시입력해주세요");
+		} else {
+			System.out.println("없는 연산자입니다. 다시 입력해주세요.");
+		}
+		
+	}
+}

@@ -1,0 +1,77 @@
+package com.kh.hw.run.controller;
+
+import java.util.Scanner;
+
+public class Function {
+
+	Scanner sc = new Scanner(System.in);
+
+	public void calculator() { // s.cal
+
+		System.out.print("첫번쨰 정수 : ");
+		int num1 = sc.nextInt();
+
+		System.out.print("두번쨰 정수 : ");
+		int num2 = sc.nextInt();
+
+		sc.nextLine();
+		
+		System.out.print("연산자 : ");
+		String op = sc.nextLine();
+
+		if (op.equals("/") && num2 == 0) {
+			System.out.printf("0으로 나눌수 없습니다.\n %d %s %d = 0\n", num1, op, num2);
+			return;
+		}
+
+		int result = 0;
+
+		switch (op) {
+		case "+":
+			result = num1 + num2;
+			break;
+		case "-":
+			result = num1 - num2;
+			break;
+		case "*":
+			result = num1 * num2;
+			break;
+		case "/":
+			result = num1 * num2;
+			break;
+		default:
+			System.out.println("잘못 입력하셨습니다. ");
+		}
+		System.out.printf("%d %s %d = %d",num1,op,num2,result);
+
+	} // e.cal
+
+	public void totalCalculator() {	//s.total
+		
+		System.out.print("첫번쨰 정수 : ");
+		int num1 = sc.nextInt();
+
+		System.out.print("두번쨰 정수 : ");
+		int num2 = sc.nextInt();
+		
+		if (num1 >=0 && num2>=0 ) {		//  s.if
+			int max = Math.max(num1, num2);
+			int min = Math.min(num1, num2);
+			
+			int sum = min+max;		// 
+			
+			for(int i =min;i<max ;i++ ) {	// s.for
+				sum += i; 
+				System.out.printf("%d부터 %d까지의 합 :%d\n",min,max,sum);
+				
+				break; 
+		}	 // e.for 
+		
+	
+					
+		}	// e.if
+		
+		
+	}	// e.total 
+	
+}

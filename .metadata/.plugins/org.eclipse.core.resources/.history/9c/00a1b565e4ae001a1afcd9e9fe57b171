@@ -1,0 +1,18 @@
+package com.hw2.model.vo;
+
+public class Student {
+
+	// 1. 필드
+	private int grade;
+	private int classroom;
+	private String name;
+	private int kor;
+	private int eng;
+	private int math;
+	
+	// 2. 생성자
+	
+	// 3. 메소드생성자
+	// 4. setter
+	// 5.getter
+}

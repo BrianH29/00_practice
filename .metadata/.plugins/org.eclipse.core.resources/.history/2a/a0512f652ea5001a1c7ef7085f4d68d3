@@ -1,0 +1,12 @@
+package com.kh.chap01.practice4.run;
+
+import com.kh.chap1.practice4.example.ConditionPractice;
+
+
+public class Run {
+
+	ConditionPractice a = new ConditionPractice();
+	a.practice1();
+	
+	
+}

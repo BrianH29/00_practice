@@ -1,0 +1,13 @@
+package com.kh.chap1.practice.example;
+
+import java.util.Scanner;
+
+public class ConditionPractice {
+	
+	Scanner sc = new Scanner(System.in);
+	public void practice1() {
+		
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package mvc.controller;
+
+import mvc.model.vo.Member;
+
+public class MemberController {
+	
+	// 최대 회원 수 10
+	public static final int SIZE = 10;	
+	
+	// 현재 회원의 수 
+	private int memberCount;
+	
+	private Member[] mem = new Member[10]; 
+	
+	mem[0] = new Member("user01", "pass01","김유신", 20, 'M', "kim12@naver.com");
+	mem[1] = new Member("user02", "pass02", "이순신", 60, 'M', "lee2@naver.com");
+	mem[2] = new Member("user03", "pass03", "유관순", 17, 'F', "yo5@hanmail.net");
+	
+	
+	
+	}
+			
+	public void getMemberCount() {		// int로 바꿔야함. 
+		
+	}
+
+}

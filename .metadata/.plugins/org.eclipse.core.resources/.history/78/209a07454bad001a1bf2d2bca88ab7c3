@@ -1,0 +1,28 @@
+package com.hw1.run;
+
+import com.hw1.model.vo.Product;
+
+public class ProductTest1 {
+	public static void main(String[] args) {
+		
+		Product a = new Product();
+		
+		/*
+		 * 1.담아둘 배열 3개 준비  ex)int[] arr = new int[];
+		 * 2.for문
+		 * 3.가격 변경
+		 * 4.출력
+		 */
+		
+		Product[][] ph = new Product[3][5];
+		
+		for(int i=0; i<ph.length;i++) {
+			ph[0][5] = new Product("ssgnot9","GalaxyNote9","경기도 수원",96000,10.0);
+			
+		}
+		System.out.println(ph[0]);
+		
+		
+	}
+
+}

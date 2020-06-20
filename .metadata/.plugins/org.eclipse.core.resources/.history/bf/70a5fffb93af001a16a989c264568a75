@@ -1,0 +1,52 @@
+package mvc.model.vo;
+
+public class Member {
+	
+	//1.필드
+	private String userId;
+	private String userPwd;
+	private String name;
+	private int age;
+	private char gender;
+	private String email;
+	
+	//2.생성자
+	public Member() {
+		
+	}
+	
+	//3.메소드생성자
+	public Member(String userId, String userPwd, String name, int age, char gender, String email) {
+		this.userId = userId;
+		this.userPwd = userPwd;
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+		this.email = email;
+	}
+	
+	//4.setter
+	public void setuserId(String userId) {
+		this.userId = userId;
+	}
+	public void setuserPwd(String userPwd) {
+		this.userPwd = userPwd;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	//5.getter
+	
+	//6.info
+
+}

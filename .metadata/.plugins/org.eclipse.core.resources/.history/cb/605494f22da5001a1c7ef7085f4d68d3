@@ -1,0 +1,22 @@
+package com.kh.chap1.practice.example;
+
+import java.util.Scanner;
+
+public class ConditionPractice {
+	
+	Scanner sc = new Scanner(System.in);
+	public void practice1() {
+		
+		System.out.print("메뉴 번호를 입력하세요 : ");
+		int alert = sc.nextInt();
+		
+		String input = null;
+		
+		switch(alert) {
+		case 1: input ="입력"; break;
+		case 2: 
+		}
+		
+	}
+
+}
