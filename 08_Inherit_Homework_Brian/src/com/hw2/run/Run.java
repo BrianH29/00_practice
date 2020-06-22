@@ -16,17 +16,22 @@ public class Run {
 		
 		r[0] = new Rectangle(-1,-2,5,2);
 		r[1] = new Rectangle(-2,5,2,8);
-			
-		System.out.println("====circle====");
-		for(Circle answer: c) {
+		
+		System.out.println("===circle===");
+		for(Circle answer : c ) {
 			System.out.println(answer.draw());
+			
 		}
 		
-		System.out.println("====rectangle====");
+		System.out.println("===rectangle===");
 		for(Rectangle answer : r) {
 			System.out.println(answer.draw());
 		}
+			
+			
+	
 		
+	
 		
 	}
 

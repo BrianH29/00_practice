@@ -15,7 +15,7 @@ public class Point {
 	}
 
 	public String draw() {
-	 return "(x,y) : " + "(" + x + "," + y + ")\n";
+	return "(x, y) :" + "("+ x +", " + y + ")\n"; 
 	}
 
 	// setter

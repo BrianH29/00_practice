@@ -12,8 +12,7 @@ public class Circle extends Point{
 		this.radius = radius;
 	}
 	public String draw() {
-	return super.draw() + "면적 : " + Math.round((Math.PI*10)*radius*radius)/10.0 + "\n둘레 : " +
-					(Math.round(Math.PI*10)*radius*2)/10.0;
+	return super.draw() + "면적 : " + (Math.round(Math.PI*10)*radius*radius)/10.0 + "\n둘레 : " +  (Math.round(Math.PI*10)*radius*2)/10.0;
 	}
 	
 	// setter

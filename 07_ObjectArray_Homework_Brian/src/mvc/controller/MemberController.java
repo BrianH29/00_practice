@@ -31,7 +31,7 @@ public class MemberController {
 	}
 	
 	public Member checkId(String userId) {	// 아이디로 검색된 결과를 담을 변수 초기화
-		Member m = null; 
+		Member m = null;  // 전달 받은 회원의 아이디와 일치하는 회원 객체를 보관할 변수 
 		for(int i=0;i<memberCount;i++) {
 			if(userId.equals(mem[i].getuserId())) {
 				m = mem[i];
@@ -42,19 +42,35 @@ public class MemberController {
 		return m; 
 	}
 
-	public int insertMember(String userId, String userPwd, String name, int age, char gender, String email) {
+	public void insertMember(Member m) {
 		
-		int result = 0;
-		if(memberCount<mem.length) {
-			mem[memberCount++] = new Member(userId, userPwd, name, age, gender, email);
-			result = 1;
-		} else {
-			result = 0;
-		}
-		
-		return result;
-			
+		mem[memberCount++] = m;			
 	}//e.inserMember
 	
+	
+	public Member[] searchMember(int menu, String search) {
+		
+		Member searchMember = null; // 검색된 회원 정보를 담을 변수 초기화
+		
+		for(int j=0; j<memberCount; j++) {	// 회원  들 중 
+			
+			if(menu == '1' && mem[j].getuserId().equals(search)) {
+				searchMember = mem[j];
+				
+			} else if (menu == '2' && mem[j].getName().equals(search)) { 	// 메뉴 검색과 회원 수에 내용과 동일할때 
+				searchMember = mem[j];
+				
+			} else if (menu =='3' && mem[j].getEmail().equals(search) {
+				searchMember = mem[j];
+				
+			} else {
+				
+			}
+			
+		}//e.for
+		
+		
+		return ; // 잠시 
+	}
 	
 }

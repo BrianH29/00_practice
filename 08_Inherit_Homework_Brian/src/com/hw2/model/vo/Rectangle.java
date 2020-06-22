@@ -16,7 +16,7 @@ public class Rectangle extends Point {
 	}
 	
 	public String draw() {
-		return super.draw() + "면적 : " + width*height + "\n둘레 : " + 2*(width+height);
+	return super.draw() + "면적 : " + (height*width) + "\n둘레 : " + 2*(height*width);
 	}
 	
 	public void setWidth(int width) {
