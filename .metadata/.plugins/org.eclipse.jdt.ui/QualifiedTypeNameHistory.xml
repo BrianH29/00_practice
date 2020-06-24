@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.kh.hw.run.view.Menu"/>
-<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-<fullyQualifiedTypeName name="com.kh.array.practice.ArrayPractice"/>
-<fullyQualifiedTypeName name="com.hw1.model.vo.Book"/>
-<fullyQualifiedTypeName name="com.method.hw1.controller.NonStaticSample"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="com.method.hw2.controller.NonStaticSample"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="mvc.model.vo.Book"/>
 <fullyQualifiedTypeName name="mvc.model.vo.Member"/>
-<fullyQualifiedTypeName name="java.lang.reflect.Member"/>
-<fullyQualifiedTypeName name="com.hw2.model.vo.Rectangle"/>
 </qualifiedTypeNameHistroy>

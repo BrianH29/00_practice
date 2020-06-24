@@ -1,7 +1,0 @@
-package mvc.controller;
-
-public class MemberController {
-	private static final int SIZE = 10;
-	
-
-}

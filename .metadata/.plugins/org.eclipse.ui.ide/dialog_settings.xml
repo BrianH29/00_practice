@@ -2,22 +2,26 @@
 <section name="Workbench">
 	<section name="ResourceNavigator">
 		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
-		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1590537139260"/>
+		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1592813416029"/>
 	</section>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
-		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-		</list>
 	</section>
 	<section name="ExternalProjectImportWizard">
-		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
-		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="D:\00_practice"/>
+			<item value="C:\Users\brian\Desktop\00_practice\00_project"/>
+			<item value="C:\Users\brian\Desktop\00_practice\03_Homework_Total"/>
+			<item value="C:\Users\brian\Desktop\00_practice\07_ObjectArray_Homework_Brian"/>
+			<item value="C:\Users\brian\Desktop\00_practice\06_Object_Homework_Brian"/>
+			<item value="C:\Users\brian\Desktop\00_practice\08_Inherit_Homework_Brian"/>
+			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\brian\Desktop\01_practice\03_Homework_Total\src\com\kh\hw\run\Run.java"/>
 			<item value=""/>
+			<item value="C:\Users\brian\Desktop\10_API_BookProject_Homework.zip"/>
 		</list>
 	</section>
 </section>
