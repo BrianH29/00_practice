@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="mvc.model.vo.Book"/>
 <fullyQualifiedTypeName name="mvc.model.vo.Member"/>
+<fullyQualifiedTypeName name="mvc.controller.LibraryManager"/>
+<fullyQualifiedTypeName name="mvc.model.vo.Book"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 </qualifiedTypeNameHistroy>
