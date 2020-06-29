@@ -17,7 +17,7 @@ public class Run {
 		while (true) {
 			System.out.println("****My Note****");
 
-			System.out.println("1.노트 새로 만들기"); // fd.fileSave() 실행
+			System.out.println("1. 노트 새로 만들기"); // fd.fileSave() 실행
 			System.out.println("2. 노트 열기 "); // fd.fileOpen() 실행
 			System.out.println("3. 노트 열어서 수정하기"); // fd.fileEdit() 실행
 			System.out.println("4. 끝내기");
