@@ -2,6 +2,9 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="mvc.model.vo.Member"/>
 <fullyQualifiedTypeName name="mvc.controller.LibraryManager"/>
-<fullyQualifiedTypeName name="mvc.model.vo.Book"/>
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="mvc.controller.BookManager"/>
+<fullyQualifiedTypeName name="mvc.model.vo.Book"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="mvc.model.vo.Music"/>
 </qualifiedTypeNameHistroy>

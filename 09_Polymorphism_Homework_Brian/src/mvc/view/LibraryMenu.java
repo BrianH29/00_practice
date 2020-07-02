@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import mvc.controller.LibraryManager;
 import mvc.model.vo.Book;
+import mvc.model.vo.Member;
 
 public class LibraryMenu {
 
@@ -27,7 +28,8 @@ public class LibraryMenu {
 		
 		System.out.print("성별(m/f): ");
 		char gender = sc.next().charAt(0);
-		lm.insertMember();
+		
+		lm.insertMember(new Member(name, age, gender));
 		
 		System.out.println("====메뉴====");
 		System.out.println("1. 마이페이지 ");
@@ -40,9 +42,9 @@ public class LibraryMenu {
 		sc.nextLine();
 		
 		switch(menu) {
-		case 1 : //myInfo(); break;
+		case 1 : myInfo(); break;
 		case 2 : selectAll(); break;
-		case 3 : //searchBook(); break;
+		case 3 : searchBook(); break;
 		case 4 : rentBook(); break; 
 		case 0 : System.out.println("exit program"); return;
 		default : System.out.println("잘못 입력하셨습니다. 다시 입력시켜주세요."); 
@@ -55,15 +57,37 @@ public class LibraryMenu {
 	
 	public void selectAll() {
 		Book[] bList = lm.selectAll();
-		for(Book list : bList) {
-			System.out.println(list);
+		for(int i=0; i<lm.selectAll().length;i++) {
+			System.out.println(bList[i]);
 		}
 		
 	}
-	public void searchook() {
+	public void searchBook() {
+		
+		System.out.print("검색할 제목 키워드 : ");
+		String keyword = sc.nextLine(); 
+		
+		Book[] searchList = lm.searchBook(keyword);
+		
+		int count = 0;
+		for(Book sl : searchList) {
+			if(sl != null) {
+				System.out.println(sl);
+				count++;
+			}
+			
+			if(count == 0) {
+				System.out.println("검색된 책이 없습니다.");
+			}
+		}
 		
 	}
 	public void rentBook() {
+		selectAll();
+		
+		System.out.println("대여할 도서 번호 선택:");
+		int num = sc.nextInt(); 
+		
 		
 	}
 }

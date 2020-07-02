@@ -10,6 +10,7 @@ public class LibraryManager {
 	//field
 	private Member mem = null;	// null로 명시최기화
 	private Book[] bList = new Book[5]; // 크기 5 할당
+	private static final int SIZE = 10;
 	
 	//초기화 블록을 이용하여 샘플 데이터 초기화
 	{
@@ -22,18 +23,28 @@ public class LibraryManager {
 	
 	// method
 	public void insertMember(Member mem) {
-		Member mem = new Member(name, age)
+		this.mem = mem; 
 	}
 	public Member myinfo() {
 		return ;
 	}
 	
 	public Book[] selectAll() {
-		return;
+		return bList;
 	}
-	public Book[] searchBook() {
-		return;
+	public Book[] searchBook(String keyword) {
+		Book[] searchList = new Book[SIZE];	// 배열 사이즈 선정 
+		int count = 0; 
+		
+		for(int i=0; i<SIZE; i++) {
+			if(bList[i].getTitle().contains(keyword)) {	// 북리스트 제목과 검색 제목이 같을 경우 count에 저장
+				searchList[count++] = bList[i];
+			}
+		}
+		
+		return searchList;
 	}
+	
 	public int rentBook(int index) {
 		return;
 	}
